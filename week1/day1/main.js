@@ -44,7 +44,7 @@ const person = {
 
 person.height = 234;
 
-// console.log(person); 
+// console.log(person);
 
 // for (var key in person) {
 //   console.log('key  => ', key, person[key]);
@@ -60,8 +60,52 @@ function sayHello(name) {
 
   // return newScope;
 }
+console.log('person before', person);
+
+function changePerson(user) {
+  user.age = 4565346456;
+}
 
 
 
-console.log(sayHello('Jason'), newScope);
+console.log('return from chagne person', changePerson(person));
+
+
+console.log('person after', person);
+
+
+// console.log(sayHello('Jason'), newScope);
+
+
+
+function counter() {
+  var count = 0;
+
+  function childScope() {
+    return ++count;
+  }
+
+  return childScope;
+}
+
+
+var counter = counter();
+
+console.log(counter);
+
+console.log(counter());
+console.log(counter());
+console.log(counter());
+
+// console.log(counter())
+//  => 1
+
+// console.log(counter())
+//  => 2
+
+// console.log(counter())
+//  => 3
+
+// console.log(counter())
+//  => 4
 
