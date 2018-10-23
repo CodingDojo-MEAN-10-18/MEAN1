@@ -1,0 +1,24 @@
+{
+  "name": "express-intro",
+  "version": "1.0.0",
+  "description": "Express and ejs intro ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ejs",
+    "express",
+    "intro"
+  ],
+  "author": "me",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
